@@ -1,0 +1,14 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="SpaceWork logo">
+  <defs>
+    <linearGradient id="g1" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#3f00fc"/>
+      <stop offset="100%" stop-color="#160059"/>
+    </linearGradient>
+  </defs>
+  <rect width="200" height="200" rx="42" fill="#070b26"/>
+  <circle cx="100" cy="100" r="72" fill="url(#g1)" opacity="0.95"/>
+  <path d="M100 46 L140 94 L100 154 L60 94 Z" fill="#ffffff" opacity="0.92"/>
+  <path d="M100 66 L126 94 L100 130 L74 94 Z" fill="#0f0f20" opacity="0.92"/>
+  <path d="M82 86h36v12H82zm0 18h36v12H82z" fill="#ffffff" opacity="0.86"/>
+</svg>
+

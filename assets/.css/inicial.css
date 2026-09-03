@@ -53,7 +53,8 @@ footer {
     text-shadow: 0 0 18px rgba(63, 0, 252, 0.9);
 }
 
-.hero {
+.hero,
+.page-hero {
     min-height: 58vh;
     display: grid;
     place-items: center;
@@ -64,7 +65,13 @@ footer {
     border-bottom: 1px solid var(--borda);
 }
 
-.hero h1 {
+.page-hero {
+    min-height: 38vh;
+    padding: 5.5rem 1rem 4rem;
+}
+
+.hero h1,
+.page-hero h1 {
     margin-bottom: 1rem;
     font-size: clamp(2.75rem, 8vw, 6.5rem);
     font-weight: 800;
@@ -73,16 +80,129 @@ footer {
     text-shadow: 0 0 30px rgba(63, 0, 252, 0.7);
 }
 
-.hero p {
+.page-hero h1 {
+    font-size: clamp(2.2rem, 5vw, 4.2rem);
+}
+
+.hero p,
+.page-hero p {
     max-width: 40rem;
     margin: 0 auto 2rem;
     color: rgba(255, 255, 255, 0.76);
     font-size: 1.1rem;
 }
 
+.kicker {
+    display: inline-block;
+    margin-bottom: 1rem;
+    color: rgba(255, 255, 255, 0.8);
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
 h2,
 h5 {
     font-weight: 700;
+}
+
+.section-shell {
+    padding: 5rem 0;
+}
+
+.feature-card,
+.info-card,
+.stat-box,
+.contact-form,
+.accordion-item {
+    background: rgba(22, 0, 89, 0.52);
+    border: 1px solid var(--borda);
+    border-radius: 12px;
+    box-shadow: var(--sombra);
+}
+
+.feature-card,
+.info-card,
+.stat-box {
+    padding: 1.5rem;
+}
+
+.feature-card p,
+.info-card p,
+.stat-box p,
+.accordion-body {
+    color: rgba(255, 255, 255, 0.72);
+    margin-bottom: 0;
+}
+
+.stat-box {
+    height: 100%;
+    text-align: center;
+}
+
+.stat-box h3 {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--branco);
+    margin-bottom: 0.75rem;
+}
+
+.contact-form {
+    padding: 1.5rem;
+}
+
+.form-label {
+    color: var(--branco);
+    font-weight: 600;
+}
+
+.form-control {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid var(--borda);
+    color: var(--branco);
+    border-radius: 8px;
+}
+
+.form-control::placeholder {
+    color: rgba(255, 255, 255, 0.42);
+}
+
+.form-control:focus {
+    color: var(--branco);
+    background: rgba(255, 255, 255, 0.06);
+    border-color: rgba(63, 0, 252, 0.9);
+    box-shadow: 0 0 0 0.2rem rgba(63, 0, 252, 0.25);
+}
+
+.accordion {
+    --bs-accordion-bg: transparent;
+    --bs-accordion-border-color: var(--borda);
+    --bs-accordion-btn-bg: rgba(22, 0, 89, 0.52);
+    --bs-accordion-btn-color: var(--branco);
+    --bs-accordion-btn-focus-border-color: rgba(63, 0, 252, 0.9);
+    --bs-accordion-btn-focus-box-shadow: 0 0 0 0.25rem rgba(63, 0, 252, 0.25);
+    --bs-accordion-active-bg: rgba(22, 0, 89, 0.7);
+    --bs-accordion-active-color: var(--branco);
+    --bs-accordion-border-radius: 12px;
+}
+
+.accordion-item {
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+.accordion-button {
+    font-weight: 700;
+}
+
+.accordion-button:not(.collapsed) {
+    color: var(--branco);
+    box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.08);
+}
+
+.accordion-body {
+    padding: 1.25rem 1.5rem;
 }
 
 section {
@@ -155,12 +275,14 @@ footer {
 }
 
 @media (max-width: 575px) {
-    .hero {
+    .hero,
+    .page-hero {
         min-height: 64vh;
         padding: 5rem 1rem;
     }
 
-    .hero .btn {
+    .hero .btn,
+    .page-hero .btn {
         width: 100%;
         margin-bottom: 0.7rem;
     }
